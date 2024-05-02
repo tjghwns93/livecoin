@@ -20,6 +20,7 @@ function Detail (props){
             }
         }
     }, [findId]);
+    
     if (!findId) {
         return <div>Loading...</div>;  // 또는 로딩 스피너 컴포넌트
     }
