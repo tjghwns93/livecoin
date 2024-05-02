@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  word-break: keep-all;
+  background-color: #d9d9d9;
+}
+
+.container {
+  width: 86%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background: #11113C;
+}
+header .container {
+  position: relative;
+}
+header .container .logo {
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+}
+header .container .krw-btn {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+  background: #11113C;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 7px 10px;
+  color: #fff;
+}
+
+.coinlist {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  width: 200px;
+  height: 92vh;
+  overflow: auto;
+  background-color: #fff;
+}
+.coinlist .coinlist-item {
+  width: 100%;
+  border-bottom: 1px solid rgb(202, 202, 202);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.coinlist .coinlist-item .coinlist-img {
+  width: 22%;
+}
+.coinlist .coinlist-item p {
+  width: 70%;
+  text-align: center;
+}
+
+.detail-wrap {
+  width: calc(100% - 200px);
+  margin-left: auto;
+  padding-top: 20vh;
+}
+.detail-wrap .detail {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.detail-wrap .detail .detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  border-bottom: 1px solid #DCDCDC;
+}
+.detail-wrap .detail .detail-header .detail-image {
+  width: 41px;
+  padding-top: 12px;
+}
+.detail-wrap .detail .detail-header h2 {
+  font-size: 45px;
+}
+.detail-wrap .detail .detail-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 55px 0;
+}
+.detail-wrap .detail .detail-body .red {
+  color: #C84A31;
+}
+.detail-wrap .detail .detail-body .blue {
+  color: #1261C4;
+}
+.detail-wrap .detail .detail-body .detail-price {
+  display: flex;
+  align-items: flex-end;
+}
+.detail-wrap .detail .detail-body .detail-price p:first-child {
+  font-size: 60px;
+}
+.detail-wrap .detail .detail-body .detail-price p:nth-child(2) {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 60px;
+}
+.detail-wrap .detail .detail-body .detail-24h {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  font-size: 30px;
+  margin-bottom: 55px;
+}
+.detail-wrap .detail .detail-body .detail-24h .updown {
+  font-size: 20px;
+  margin: auto 0;
+}
+.detail-wrap .detail .detail-body .detail-highlow {
+  display: flex;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+  align-items: flex-end;
+}
+.detail-wrap .detail .detail-body .detail-highlow span {
+  font-size: 13px;
+  line-height: 37px;
+}
+.detail-wrap .detail .detail-body .detail-highlow p {
+  font-size: 30px;
+}
+.detail-wrap .detail .detail-body .detail-highlow p.high {
+  color: #C84A31;
+}
+.detail-wrap .detail .detail-body .detail-highlow p.low {
+  color: #1261C4;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 625px) {
+  header .container {
+    text-align: center;
+  }
+  header .container .logo {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  header .container .krw-btn {
+    position: static;
+    font-size: 11px;
+  }
+  .coinlist {
+    width: 100px;
+    top: 107px;
+    height: 88vh;
+  }
+  .coinlist .coinlist-item {
+    font-size: 11px;
+  }
+  .detail-wrap {
+    width: calc(100% - 100px);
+    padding-top: 10vh;
+  }
+  .detail-wrap .detail {
+    width: 280px;
+  }
+  .detail-wrap .detail .detail-header {
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+  }
+  .detail-wrap .detail .detail-header .detail-image {
+    width: 36px;
+  }
+  .detail-wrap .detail .detail-header h2 {
+    font-size: 41px;
+  }
+  .detail-wrap .detail .detail-header p {
+    font-size: 14px;
+  }
+  .detail-wrap .detail .detail-body .detail-price p:first-child {
+    font-size: 40px;
+  }
+  .detail-wrap .detail .detail-body .detail-price p:nth-child(2) {
+    font-size: 18px;
+    line-height: 40px;
+  }
+  .detail-wrap .detail .detail-body .detail-24h {
+    font-size: 20px;
+  }
+  .detail-wrap .detail .detail-body .detail-highlow {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+@media only screen and (min-width: 626px) and (max-width: 750px) {
+  header .container {
+    text-align: center;
+  }
+  header .container .logo {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  header .container .krw-btn {
+    position: static;
+    font-size: 11px;
+  }
+  .coinlist {
+    width: 150px;
+    top: 107px;
+    height: 88vh;
+  }
+  .coinlist .coinlist-item {
+    font-size: 13px;
+  }
+  .detail-wrap {
+    width: calc(100% - 150px);
+    padding-top: 10vh;
+  }
+  .detail-wrap .detail {
+    width: 450px;
+  }
+}/*# sourceMappingURL=App.css.map */

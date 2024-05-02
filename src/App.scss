@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  word-break: keep-all;
+  background-color: #d9d9d9;
+}
+
+.container {
+  width: 86%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+//////////////////  App //////////////////////////////
+
+header {
+  background: #11113C;
+
+  .container {
+    position: relative;
+
+    .logo {
+      text-align: center;
+      font-size: 50px;
+      color: #fff;
+    }
+
+    .krw-btn {
+      position: absolute;
+      top: 50%;
+      right: 100px;
+      transform: translateY(-50%);
+      background: #11113C;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      padding: 7px 10px;
+      color: #fff;
+    }
+
+  }
+}
+
+.coinlist {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  width: 200px;
+  height: 92vh;
+  overflow: auto;
+  background-color: #fff;
+
+  .coinlist-item {
+    width: 100%;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    .coinlist-img {
+      width: 22%;
+    }
+
+    p {
+      width: 70%;
+      text-align: center;
+    }
+  }
+}
+
+
+///////////////////  Detail //////////////////////
+///////////////////  Detail //////////////////////
+///////////////////  Detail //////////////////////
+
+.detail-wrap {
+  width: calc(100% - 200px);
+  margin-left: auto;
+  padding-top: 20vh;
+
+  .detail {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+
+    .detail-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 0;
+      column-gap: 10px;
+      border-bottom: 1px solid #DCDCDC;
+
+      .detail-image {
+        width: 41px;
+        padding-top: 12px;
+      }
+
+      h2 {
+        font-size: 45px;
+      }
+    }
+
+    .detail-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 55px 0;
+
+      .red {
+        color: #C84A31;
+      }
+
+      .blue {
+        color: #1261C4;
+      }
+
+      .detail-price {
+        display: flex;
+        align-items: flex-end;
+
+        p {
+
+          &:first-child {
+            font-size: 60px;
+          }
+
+          &:nth-child(2) {
+            text-transform: uppercase;
+            font-size: 30px;
+            line-height: 60px;
+          }
+        }
+      }
+
+      .detail-24h {
+        display: flex;
+        column-gap: 5px;
+        font-size: 30px;
+        margin-bottom: 55px;
+
+        .updown {
+          font-size: 20px;
+          margin: auto 0;
+        }
+      }
+
+      .detail-highlow {
+        display: flex;
+        column-gap: 70px;
+        align-items: flex-end;
+
+        span {
+          font-size: 13px;
+          line-height: 37px;
+        }
+
+        p {
+          font-size: 30px;
+
+          &.high {
+            color: #C84A31;
+          }
+
+          &.low {
+            color: #1261C4;
+          }
+        }
+      }
+    }
+  }
+}
+
+///////////// media /////////////////////////
+///////////// media /////////////////////////
+///////////// media /////////////////////////
+
+@media only screen and (min-width: 0px) and (max-width: 625px) {
+
+  header {
+    .container {
+      text-align: center;
+
+      .logo {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+
+      .krw-btn {
+        position: static;
+        font-size: 11px;
+      }
+    }
+  }
+
+  .coinlist {
+    width: 100px;
+    top: 107px;
+    height: 88vh;
+
+    .coinlist-item {
+      font-size: 11px;
+    }
+  }
+
+  .detail-wrap {
+    width: calc(100% - 100px);
+    padding-top: 10vh;
+
+    .detail {
+      width: 280px;
+
+      .detail-header {
+        column-gap: 5px;
+
+        .detail-image {
+          width: 36px;
+        }
+
+        h2 {
+          font-size: 41px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .detail-body {
+
+        .detail-price {
+
+          p {
+
+            &:first-child {
+              font-size: 40px;
+            }
+
+            &:nth-child(2) {
+              font-size: 18px;
+              line-height: 40px;
+            }
+          }
+        }
+
+        .detail-24h {
+          font-size: 20px;
+        }
+
+        .detail-highlow {
+          column-gap: 30px;
+        }
+      }
+
+    }
+  }
+}
+
+@media only screen and (min-width: 626px) and (max-width: 750px) {
+
+  header {
+    .container {
+      text-align: center;
+
+      .logo {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+
+      .krw-btn {
+        position: static;
+        font-size: 11px;
+      }
+    }
+  }
+
+  .coinlist {
+    width: 150px;
+    top: 107px;
+    height: 88vh;
+
+    .coinlist-item {
+      font-size: 13px;
+    }
+  }
+
+  .detail-wrap {
+    width: calc(100% - 150px);
+    padding-top: 10vh;
+
+    .detail {
+      width: 450px;
+    }
+  }
+}
