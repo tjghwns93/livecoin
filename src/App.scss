@@ -35,7 +35,7 @@ a {
 //////////////////  App //////////////////////////////
 
 header {
-  background: #11113C;
+  background: #093687;
 
   .container {
     position: relative;
@@ -51,10 +51,9 @@ header {
       top: 50%;
       right: 100px;
       transform: translateY(-50%);
-      background: #11113C;
-      border: 1px solid #fff;
-      border-radius: 4px;
-      padding: 7px 10px;
+      background: #0062df;
+      border: none;
+      padding: 10px 15px;
       color: #fff;
     }
 
@@ -86,6 +85,35 @@ header {
       width: 70%;
       text-align: center;
     }
+  }
+}
+
+////////////////// Home ////////////////////
+////////////////// Home ////////////////////
+////////////////// Home ////////////////////
+
+.home-wrap {
+  width: calc(100% - 200px);
+  margin-left: auto;
+  padding: 30vh 0;
+  text-align: center;
+  background: url('https://github.com/tjghwns93/images/blob/main/livecoin.png?raw=true') center no-repeat;
+
+  h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  .home-btn {
+    font-size: 20px;
+    background-color: #0062df;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
   }
 }
 
@@ -217,7 +245,7 @@ header {
 
   .coinlist {
     width: 100px;
-    top: 107px;
+    top: 110px;
     height: 88vh;
 
     .coinlist-item {
@@ -298,7 +326,7 @@ header {
 
   .coinlist {
     width: 150px;
-    top: 107px;
+    top: 110px;
     height: 88vh;
 
     .coinlist-item {
