@@ -89,8 +89,24 @@ header .container .krw-btn {
   font-size: 34px;
   margin-bottom: 10px;
 }
-.home-wrap p {
-  margin-bottom: 30px;
+.home-wrap .home-info {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.home-wrap .home-info > div {
+  width: 400px;
+}
+.home-wrap .home-info > div p:nth-child(1) {
+  font-size: 28px;
+  font-weight: bold;
+  color: #093687;
+}
+.home-wrap .home-info > div p:nth-child(2) {
+  color: #7588aa;
+}
+.home-wrap .home-info > div:first-child {
+  border-right: 1px solid rgb(148, 186, 223);
 }
 .home-wrap .home-btn {
   font-size: 20px;
@@ -212,6 +228,18 @@ header .container .krw-btn {
   .home-wrap p {
     font-size: 14px;
   }
+  .home-wrap .home-info {
+    margin: 15px 0;
+  }
+  .home-wrap .home-info > div {
+    width: 400px;
+  }
+  .home-wrap .home-info > div p:nth-child(1) {
+    font-size: 13px;
+  }
+  .home-wrap .home-info > div p:nth-child(2) {
+    font-size: 11px;
+  }
   .home-wrap .home-btn {
     font-size: 16px;
     padding: 9px 11px;
@@ -280,6 +308,15 @@ header .container .krw-btn {
   }
   .home-wrap p {
     font-size: 14px;
+  }
+  .home-wrap .home-info {
+    margin: 30px 0;
+  }
+  .home-wrap .home-info > div {
+    width: 400px;
+  }
+  .home-wrap .home-info > div p:nth-child(1) {
+    font-size: 22px;
   }
   .home-wrap .home-btn {
     font-size: 16px;

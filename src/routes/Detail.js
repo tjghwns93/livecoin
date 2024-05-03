@@ -26,8 +26,6 @@ function Detail (props){
     }
 
 
-    console.log(props.krw)
-
     return (
         <div className="detail-wrap">
             <div className="detail">

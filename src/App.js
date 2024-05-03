@@ -67,7 +67,7 @@ function App() {
 
 
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<Home coin={coin}/>}/>
         <Route path='/detail/:id' element={<Detail coin={coin} krw={krw}/>}/>
       </Routes>
 
