@@ -253,6 +253,24 @@ header {
     }
   }
 
+  .home-wrap {
+    width: calc(100% - 100px);
+    padding: 15vh 0;
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  
+    .home-btn {
+      font-size: 16px;
+      padding: 9px 11px;
+    }
+  }
+
   .detail-wrap {
     width: calc(100% - 100px);
     padding-top: 10vh;
@@ -331,6 +349,24 @@ header {
 
     .coinlist-item {
       font-size: 13px;
+    }
+  }
+
+  .home-wrap {
+    width: calc(100% - 150px);
+    padding: 20vh 0;
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  
+    .home-btn {
+      font-size: 16px;
+      padding: 9px 11px;
     }
   }
 
