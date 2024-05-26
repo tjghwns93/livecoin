@@ -36,6 +36,7 @@ header {
 }
 header .container {
   position: relative;
+  height: 75px;
 }
 header .container .logo {
   text-align: center;
@@ -55,10 +56,10 @@ header .container .krw-btn {
 
 .coinlist {
   position: fixed;
-  top: 72px;
+  bottom: 0;
   left: 0;
   width: 200px;
-  height: 92vh;
+  height: calc(100vh - 75px);
   overflow: auto;
   background-color: #fff;
 }
@@ -202,6 +203,7 @@ header .container .krw-btn {
 @media only screen and (min-width: 0px) and (max-width: 625px) {
   header .container {
     text-align: center;
+    height: 106px;
   }
   header .container .logo {
     font-size: 40px;
@@ -213,8 +215,7 @@ header .container .krw-btn {
   }
   .coinlist {
     width: 100px;
-    top: 110px;
-    height: 88vh;
+    height: calc(100vh - 106px);
   }
   .coinlist .coinlist-item {
     font-size: 11px;
@@ -283,6 +284,7 @@ header .container .krw-btn {
 @media only screen and (min-width: 626px) and (max-width: 750px) {
   header .container {
     text-align: center;
+    height: 106px;
   }
   header .container .logo {
     font-size: 40px;
@@ -294,8 +296,7 @@ header .container .krw-btn {
   }
   .coinlist {
     width: 150px;
-    top: 110px;
-    height: 88vh;
+    height: calc(100vh - 106px);
   }
   .coinlist .coinlist-item {
     font-size: 13px;

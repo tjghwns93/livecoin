@@ -39,6 +39,7 @@ header {
 
   .container {
     position: relative;
+    height: 75px;
 
     .logo {
       text-align: center;
@@ -62,10 +63,10 @@ header {
 
 .coinlist {
   position: fixed;
-  top: 72px;
+  bottom: 0;
   left: 0;
   width: 200px;
-  height: 92vh;
+  height: calc(100vh - 75px);
   overflow: auto;
   background-color: #fff;
 
@@ -257,6 +258,7 @@ header {
   header {
     .container {
       text-align: center;
+      height: 106px;
 
       .logo {
         font-size: 40px;
@@ -272,8 +274,7 @@ header {
 
   .coinlist {
     width: 100px;
-    top: 110px;
-    height: 88vh;
+    height: calc(100vh - 106px);
 
     .coinlist-item {
       font-size: 11px;
@@ -377,6 +378,7 @@ header {
   header {
     .container {
       text-align: center;
+      height: 106px;
 
       .logo {
         font-size: 40px;
@@ -392,8 +394,7 @@ header {
 
   .coinlist {
     width: 150px;
-    top: 110px;
-    height: 88vh;
+    height: calc(100vh - 106px);
 
     .coinlist-item {
       font-size: 13px;
