@@ -7,4 +7,4 @@
 
 ----
 
-![smartCalendar](https://github.com/tjghwns93/calendar-images/blob/main/smartcalendar-1.png?raw=true)
+![smartCalendar](https://github.com/tjghwns93/images/blob/main/livecoin-2.png?raw=true)
